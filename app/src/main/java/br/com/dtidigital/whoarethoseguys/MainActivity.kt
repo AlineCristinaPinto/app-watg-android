@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView = recyclerViewTribo
 
-        recyclerView.adapter = RecycleViewAdapter(tribos(), this)
+        recyclerView.adapter = RecycleViewAdapter(tribos(), imagensTribos(), this)
 
-        val layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        val layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
         recyclerView.layoutManager = layoutManager
 
     }
@@ -84,6 +84,23 @@ class MainActivity : AppCompatActivity() {
                         "Unicórnios",
                         false,
                         "" )
+        )
+    }
+
+    private fun imagensTribos() : List<String>{
+        return listOf(
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6",
+                "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6"
         )
     }
 }
