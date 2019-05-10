@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface TriboService{
 
-    @GET("")
+    @GET("/api/v1/tribos")
     fun listaTribos() : Call<List<Tribo>>
 
 }

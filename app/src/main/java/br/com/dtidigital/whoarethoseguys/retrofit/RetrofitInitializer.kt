@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RetrofitInitializer {
 
     private val retroft = Retrofit.Builder()
-                                .baseUrl("api")
+                                .baseUrl("https://api-tribos-watg.herokuapp.com")
                                 .addConverterFactory(GsonConverterFactory.create())
                                 .build()
 

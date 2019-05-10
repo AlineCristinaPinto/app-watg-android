@@ -1,8 +1,9 @@
 package br.com.dtidigital.whoarethoseguys.model.entities
 
-data class Tribo(val codTribo: Int,
-                 val codTriboPai: Int,
-                 val nomeTribo: String,
-                 val crossFuncional: Boolean,
-                 val urlLogotipo: String) {
+import com.google.gson.annotations.SerializedName
+
+data class Tribo(@SerializedName("id") val codTribo: String,
+                 val codTriboPai: String,
+                 @SerializedName("nome") val nomeTribo: String) {
+
 }
