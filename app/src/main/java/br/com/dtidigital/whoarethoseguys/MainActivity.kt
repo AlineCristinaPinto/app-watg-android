@@ -56,4 +56,5 @@ class MainActivity : AppCompatActivity() {
                 "https://sites.google.com/site/narutoeremitafoda/_/rsrc/1270160638476/config/customLogo.gif?revision=6"
         )
     }
+
 }

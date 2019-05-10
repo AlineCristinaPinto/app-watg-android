@@ -14,8 +14,8 @@ android {
 
     defaultConfig {
         applicationId "br.com.dtidigital.whoarethoseguys"
-        minSdkVersion rootProject.minSdkVersion
-        targetSdkVersion rootProject.sdkVersion
+        minSdkVersion 16
+        targetSdkVersion 28
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
